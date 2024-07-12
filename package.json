@@ -1,0 +1,140 @@
+{
+	"name": "persian-date-picker-svelte",
+	"version": "1.0.0",
+	"description": "Jalali and Gregorian Date and time picker for Svelte",
+	"type": "module",
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build && npm run package",
+		"build:site": "vite build",
+		"preview": "vite preview",
+		"package": "svelte-package",
+		"prepublishOnly": "npm run package",
+		"lint": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json && eslint src && prettier --check src",
+		"format": "eslint --fix src && prettier --write src",
+		"test": "vitest",
+		"test:coverage": "vitest --coverage"
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-static": "^3.0.1",
+		"@sveltejs/kit": "^2.5.10",
+		"@sveltejs/package": "^2.3.1",
+		"@sveltejs/vite-plugin-svelte": "^3.1.0",
+		"@typescript-eslint/eslint-plugin": "^7.10.0",
+		"@typescript-eslint/parser": "^7.10.0",
+		"@vitest/coverage-v8": "^1.6.0",
+		"date-fns": "^3.6.0",
+		"eslint": "^8.57.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-svelte": "^2.39.0",
+		"prettier": "^3.2.5",
+		"prettier-plugin-svelte": "^3.2.3",
+		"sass": "^1.77.2",
+		"svelte": "^4.2.17",
+		"svelte-check": "^3.7.1",
+		"typescript": "^5.4.5",
+		"vite": "^5.2.11",
+		"vitest": "^1.6.0"
+	},
+	"peerDependencies": {
+		"svelte": "^3.24.0 || ^4.0.0"
+	},
+	"exports": {
+		"./package.json": "./package.json",
+		"./DateInput.svelte": {
+			"types": "./dist/DateInput.svelte.d.ts",
+			"svelte": "./dist/DateInput.svelte",
+			"default": "./dist/DateInput.svelte"
+		},
+		"./DatePicker.svelte": {
+			"types": "./dist/DatePicker.svelte.d.ts",
+			"svelte": "./dist/DatePicker.svelte",
+			"default": "./dist/DatePicker.svelte"
+		},
+		"./TimePicker.svelte": {
+			"types": "./dist/TimePicker.svelte.d.ts",
+			"svelte": "./dist/TimePicker.svelte",
+			"default": "./dist/TimePicker.svelte"
+		},
+		"./date-utils": {
+			"types": "./dist/date-utils.d.ts",
+			"default": "./dist/date-utils.js"
+		},
+		".": {
+			"types": "./dist/index.d.ts",
+			"svelte": "./dist/index.js",
+			"default": "./dist/index.js"
+		},
+		"./locale": {
+			"types": "./dist/locale.d.ts",
+			"default": "./dist/locale.js"
+		},
+		"./parse": {
+			"types": "./dist/parse.d.ts",
+			"default": "./dist/parse.js"
+		}
+	},
+	"files": [
+		"dist",
+		"!dist/**/*.test.*",
+		"!dist/**/*.spec.*"
+	],
+	"svelte": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"typesVersions": {
+		">4.0": {
+			"DateInput.svelte": [
+				"./dist/DateInput.svelte.d.ts"
+			],
+			"DatePicker.svelte": [
+				"./dist/DatePicker.svelte.d.ts"
+			],
+			"date-utils": [
+				"./dist/date-utils.d.ts"
+			],
+			"index": [
+				"./dist/index.d.ts"
+			],
+			"locale": [
+				"./dist/locale.d.ts"
+			],
+			"parse": [
+				"./dist/parse.d.ts"
+			]
+		}
+	},
+	"license": "MIT",
+	"homepage": "https://nargeszmn.github.io/persian-date-picker-svelte/",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/nargeszmn/persian-date-picker-svelte.git"
+	},
+	"author": {
+		"name": "Narges Zamani",
+		"url": "https://github.com/nargeszmn"
+	},
+	"keywords": [
+		"date",
+		"time",
+		"date-picker",
+		"persian date picker",
+		"jalali date picker",
+		"datepicker",
+		"date-time-picker",
+		"calendar",
+		"svelte",
+		"front-end"
+	],
+	"prettier": {
+		"useTabs": true,
+		"printWidth": 100,
+		"semi": false,
+		"singleQuote": true,
+		"plugins": [
+			"prettier-plugin-svelte"
+		]
+	},
+	"dependencies": {
+		"date-fns-jalali": "^3.6.0-0"
+	}
+}
