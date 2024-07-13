@@ -1,6 +1,6 @@
 {
 	"name": "persian-date-picker-svelte",
-	"version": "1.0.0",
+	"version": "0.1.0",
 	"description": "Jalali and Gregorian Date and time picker for Svelte",
 	"type": "module",
 	"scripts": {
