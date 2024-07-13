@@ -1,5 +1,11 @@
 # Persian Date Picker Svelte
 
+[![NPM](https://img.shields.io/npm/v/persian-date-picker-svelte)](https://www.npmjs.com/package/persian-date-picker-svelte)
+[![License](https://img.shields.io/npm/l/persian-date-picker-svelte)](LICENSE)
+[![NPM Downloads](https://img.shields.io/npm/dw/persian-date-picker-svelte)](https://www.npmjs.com/package/persian-date-picker-svelte)
+[![test](https://github.com/nargeszmn/persian-date-picker-svelte/actions/workflows/test.yml/badge.svg)](https://github.com/nargeszmn/persian-date-picker-svelte/actions/workflows/test.yml)
+
+
 Persian Date Picker Svelte is a package which supports both Jalali and Gregorian calendars, inspired by [Date Picker Svelte](https://github.com/probablykasper/date-picker-svelte)
 
 Features:
