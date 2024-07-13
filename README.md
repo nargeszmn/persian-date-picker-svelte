@@ -21,7 +21,7 @@ npm install -D persian-date-picker-svelte
 
 ## Usage
 
-```svelte
+```js
 <script>
   import { DateInput } from 'persian-date-picker-svelte'
   let date = new Date()
@@ -33,9 +33,9 @@ npm install -D persian-date-picker-svelte
 
 ![](Screenshot-jal.png)
 
-You can toggle between Jalali and Gregorian calendars by setting the `calendarType` prop to one of the `"Jalali" \| "Gregorian"` values.
+You can toggle between Jalali and Gregorian calendars by setting the `calendarType` prop to one of the `"Jalali" | "Gregorian"` values.
 
-```svelte
+```js
 <script>
   import { DateInput } from 'persian-date-picker-svelte'
   let date = new Date()
@@ -124,7 +124,7 @@ Object to support internationalization. Properties (all are optional):
 
 If you use [date-fns](https://date-fns.org/), you can create a Locale object (only for Gregorian calendar) by passing a date-fns locale to this function:
 
-```svelte
+```js
 <script>
   import { DatePicker, localeFromDateFnsLocale } from 'persian-date-picker-svelte'
   import { hy } from 'date-fns/locale'
