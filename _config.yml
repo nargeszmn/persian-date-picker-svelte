@@ -1,5 +1,9 @@
 title: Persian Date Picker Svelte
 description: A svelte date picker package which supports both Jalali and Gregorian calendars
-# show_downloads: true
+show_downloads: true
 # google_analytics:
-theme: jekyll-theme-midnight
+theme: jekyll-theme-hacker
+remote_theme: pages-themes/hacker@v0.2.0
+plugins:
+- jekyll-remote-theme
+- date-fns-jalali
